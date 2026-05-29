@@ -10,10 +10,10 @@
     <meta http-equiv="Expires" content="0">
 
     <!-- STRICT SEO ENGINE MARKUP -->
-    <title>CODEV2E | Official 2D Animation Studio</title>
-    <meta name="title" content="CODEV2E | Official 2D Animation Studio">
-    <meta name="description" content="The official website of Milan Naik (Nyk). Explore 2D animation, illustration, manga, and digital books.">
-    <meta name="keywords" content="CODEV2E, codev2e, codev2e studio, Milan Naik, Nyk, 2D Animation, Studio, Book, Story, Manga, Character Design, official website">
+    <title>CODEV2E Website | Official 2D Animation Studio</title>
+    <meta name="title" content="CODEV2E Website | Official 2D Animation Studio">
+    <meta name="description" content="Welcome to the official CODEV2E Website. Explore dynamic digital books, manga, and 2D animation reels by Milan Naik (Nyk).">
+    <meta name="keywords" content="CODEV2E Website, CODEV2E, codev2e, codev2e studio, Milan Naik, Nyk, 2D Animation, Studio, Book, Story, Manga, Character Design, official website">
     <meta name="author" content="Milan Naik (Nyk)">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <meta name="googlebot" content="index, follow">
@@ -23,21 +23,22 @@
     
     <!-- GLOBAL FAVICON DESIGNATION (LOGO DIRECTIVE) -->
     <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
     <link rel="apple-touch-icon" href="logo.png">
 
     <!-- OPEN GRAPH (FACEBOOK & LINKEDIN) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://codev2e.github.io/">
-    <meta property="og:title" content="CODEV2E | Official 2D Animation Studio">
-    <meta property="og:description" content="The official website of Milan Naik (Nyk). Explore 2D animation, illustration, manga, and digital books.">
+    <meta property="og:title" content="CODEV2E Website | Official 2D Animation Studio">
+    <meta property="og:description" content="Welcome to the official CODEV2E Website. Explore dynamic digital books, manga, and 2D animation reels by Milan Naik (Nyk).">
     <meta property="og:image" content="https://codev2e.github.io/logo.png">
-    <meta property="og:site_name" content="CODEV2E Studio">
+    <meta property="og:site_name" content="CODEV2E Website">
 
     <!-- TWITTER ENGINE -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://codev2e.github.io/">
-    <meta name="twitter:title" content="CODEV2E | Official 2D Animation Studio">
-    <meta name="twitter:description" content="The official website of Milan Naik (Nyk). Explore 2D animation, illustration, manga, and digital books.">
+    <meta name="twitter:title" content="CODEV2E Website | Official 2D Animation Studio">
+    <meta name="twitter:description" content="Welcome to the official CODEV2E Website. Explore dynamic digital books, manga, and 2D animation reels by Milan Naik (Nyk).">
     <meta name="twitter:image" content="https://codev2e.github.io/logo.png">
 
     <!-- JSON-LD STRUCTURED DATA SCHEMA FOR SEARCH GOOGLE RANKING -->
@@ -45,11 +46,11 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "CODEV2E",
+      "name": "CODEV2E Website",
       "alternateName": "CODEV2E Studio",
       "url": "https://codev2e.github.io/",
       "image": "https://codev2e.github.io/logo.png",
-      "description": "The official website of Milan Naik (Nyk). Explore 2D animation, illustration, manga, and digital books.",
+      "description": "Welcome to the official CODEV2E Website. Explore dynamic digital books, manga, and 2D animation reels by Milan Naik (Nyk).",
       "publisher": {
         "@type": "Person",
         "name": "Milan Naik",
@@ -392,6 +393,9 @@
         .manga-wrapper { width: 100%; position: relative; margin-top: 10px; margin-bottom: 80px; box-shadow: 0 20px 50px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; }
         .df-ui-controls { display: none !important; }
 
+        /* Unified support and feedback layout grid */
+        .support-feedback-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 30px; margin-bottom: 60px; }
+
         /* Advanced Notification System */
         #notification-center { position: fixed; top: 90px; right: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 3000; }
         .notification { 
@@ -410,6 +414,7 @@
         @media (max-width: 900px) {
             .tab-section { padding: 90px 20px 40px 20px; } 
             .projects-grid { grid-template-columns: 1fr; }
+            .support-feedback-grid { grid-template-columns: 1fr; gap: 40px; }
             h1 { font-size: 36px; }
             .book-spine-cover { height: 280px; }
             .social-card { flex-direction: column; text-align: center; gap: 15px; padding: 25px 20px; }
@@ -460,7 +465,7 @@
 
             <span style="font-size: 12px; font-weight: 700; color: var(--text-muted); letter-spacing: 3px; text-transform: uppercase;">Publications</span>
             <h1 style="margin-top: 10px;">READ BOOKS</h1>
-            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 40px; line-height: 1.6;">Explore digital editions and publications directly inside our interactive reading engine.</p>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 40px; line-height: 1.6;">Explore dynamic editions and publications directly inside our reading engine.</p>
 
             <div id="pdf-loading-state" style="text-align: center; padding: 60px 0; color: var(--text-muted);">
                 <p style="font-size: 16px; font-weight: 600;">Scanning directory...</p>
@@ -476,55 +481,71 @@
                 <div id="manga-flipbook" class="manga-wrapper" style="height: 600px; background: #18181b; border-radius: 12px;"></div>
             </div>
 
-            <!-- ANCHOR SEPARATOR FOR SUPPORT -->
+            <!-- ANCHOR SEPARATOR FOR SUPPORT & FEEDBACK -->
             <div id="support-anchor" class="section-separator"></div>
 
             <span style="font-size: 12px; font-weight: 700; color: var(--text-muted); letter-spacing: 3px; text-transform: uppercase;">Get in Touch</span>
             <h1 style="margin-top: 10px;">STUDIO COOPERATION</h1>
-            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 40px; max-width: 750px; line-height: 1.6;">Have questions, commission proposals, or support inquiries? Contact the studio below.</p>
+            <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 40px; max-width: 750px; line-height: 1.6;">Have questions about our stories, commission proposals, or general site suggestions? Reach out directly using the portals below.</p>
 
-            <!-- PORTAL 1: CONTACT SUPPORT FORM -->
-            <div class="glass-panel">
-                <h3 style="font-size: 20px; font-weight: 800; margin-bottom: 20px;">Contact Studio</h3>
-                <form action="https://formspree.io/f/xlgoawrl" method="POST" class="ajax-form" style="display: flex; flex-direction: column; gap: 20px;">
-                    <input type="hidden" name="_subject" value="Inquiry from CODEV2E Support Hub">
-                    
-                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column;">
-                            <label class="input-label">Name</label>
-                            <input type="text" name="name" placeholder="Your Name" required class="glass-form-input">
+            <div class="support-feedback-grid">
+                
+                <!-- PORTAL 1: MAIN SUPPORT FORM -->
+                <div class="glass-panel" style="margin-bottom: 0;">
+                    <h3 style="font-size: 20px; font-weight: 800; margin-bottom: 20px;">Contact Studio</h3>
+                    <form action="https://formspree.io/f/xlgoawrl" method="POST" class="ajax-form" style="display: flex; flex-direction: column; gap: 20px;">
+                        <input type="hidden" name="_subject" value="Inquiry from CODEV2E Support Hub">
+                        
+                        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                            <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column;">
+                                <label class="input-label">Name</label>
+                                <input type="text" name="name" placeholder="Your Name" required class="glass-form-input">
+                            </div>
+                            <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column;">
+                                <label class="input-label">Email Address</label>
+                                <input type="email" name="email" placeholder="you@example.com" required class="glass-form-input">
+                            </div>
                         </div>
-                        <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column;">
-                            <label class="input-label">Email Address</label>
-                            <input type="email" name="email" placeholder="you@example.com" required class="glass-form-input">
+
+                        <div style="display: flex; flex-direction: column;">
+                            <label class="input-label">Message Body</label>
+                            <textarea name="message" rows="5" placeholder="Write details about your project or inquiry..." required class="glass-form-input" style="font-family: inherit; resize: vertical;"></textarea>
                         </div>
-                    </div>
 
-                    <div style="display: flex; flex-direction: column;">
-                        <label class="input-label">Message Body</label>
-                        <textarea name="message" rows="5" placeholder="Write details about your project or inquiry..." required class="glass-form-input" style="font-family: inherit; resize: vertical;"></textarea>
-                    </div>
+                        <button type="submit" class="social-btn-dark" style="align-self: flex-start; width: auto;">Submit Message</button>
+                    </form>
+                </div>
 
-                    <button type="submit" class="social-btn-dark" style="align-self: flex-start; width: auto;">Submit Message</button>
-                </form>
+                <!-- PORTAL 2: QUICK FEEDBACK FORM -->
+                <div class="glass-panel" style="display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;">
+                    <div>
+                        <h3 style="font-size: 20px; font-weight: 800; margin-bottom: 12px;">Quick Suggestion</h3>
+                        <p style="font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">Enjoying the engine or noticed a bug? Throw a quick note over to our developers instantly.</p>
+                    </div>
+                    <form action="https://formspree.io/f/xlgoawrl" method="POST" class="ajax-form" style="display: flex; flex-direction: column; gap: 15px;">
+                        <input type="hidden" name="_subject" value="Quick System Feedback from Home Panel">
+                        <div>
+                            <label class="input-label">Your Suggestion</label>
+                            <textarea name="message" class="glass-form-input" rows="4" placeholder="Type here..." required style="font-family: inherit; resize: none;"></textarea>
+                        </div>
+                        <button type="submit" class="social-btn-dark" style="width: 100%;">Send Feedback</button>
+                    </form>
+                </div>
+
             </div>
 
-            <!-- ANCHOR SEPARATOR FOR FEEDBACK -->
-            <div id="feedback-separator" class="section-separator"></div>
-
-            <!-- PORTAL 2: QUICK FEEDBACK FORM -->
-            <div class="glass-panel">
-                <h3 style="font-size: 20px; font-weight: 800; margin-bottom: 12px;">Quick Suggestion</h3>
-                <p style="font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">Have a suggestion or noticed a bug? Share your thoughts with the development team instantly.</p>
-                
-                <form action="https://formspree.io/f/xlgoawrl" method="POST" class="ajax-form" style="display: flex; flex-direction: column; gap: 15px;">
-                    <input type="hidden" name="_subject" value="Quick System Feedback from Home Panel">
+            <!-- TERMS & CONDITIONS WIDGET (RULE.TXT) -->
+            <div class="glass-panel" style="margin-top: 40px; margin-bottom: 40px; cursor: pointer; transition: all 0.3s ease;" onclick="openTermsModal()">
+                <div class="card-header" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
+                    <span class="live-dot" style="background: #3b82f6; box-shadow: 0 0 8px #3b82f6;"></span> Studio Policy
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px; flex-wrap: wrap; gap: 15px;">
                     <div>
-                        <label class="input-label">Your Suggestion</label>
-                        <textarea name="message" class="glass-form-input" rows="4" placeholder="Type your suggestion here..." required style="font-family: inherit; resize: none;"></textarea>
+                        <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 5px;">Terms & Conditions</h3>
+                        <p style="font-size: 14px; color: var(--text-muted);">Read the official CODEV2E studio rules and usage policies.</p>
                     </div>
-                    <button type="submit" class="social-btn-dark" style="align-self: flex-start; width: auto;">Send Feedback</button>
-                </form>
+                    <span class="social-btn" style="width: auto; padding: 10px 20px; font-size: 12px; margin-top: 0;">View Rules</span>
+                </div>
             </div>
 
             <!-- Footer segment on the Home slide -->
@@ -539,7 +560,7 @@
             
             <div class="about-bleed" style="margin-top: 10px;">
                 <h2>About Nyk</h2>
-                <p class="about-bio">I'm Nyk. I specialize in 2D animation, illustration, and creative development, constantly refining my craft to deliver top-tier studio quality.</p>
+                <p class="about-bio">Hey, I'm Nyk. I specialize in 2D animation, illustration, and creative development. I'm always learning and pushing my skills to deliver top-tier studio quality!</p>
                 
                 <!-- DYNAMIC ABOUT IMAGE WITH MULTI-FORMAT FAILBACK -->
                 <img id="about-main-img" src="about.png" alt="Studio Life" class="about-dynamic-img" onerror="fallbackAboutImage(this);">
@@ -547,12 +568,12 @@
                 <div class="social-grid">
                     <a href="https://www.instagram.com/codev2e/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" class="social-card">
                         <div class="social-icon-wrapper"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
-                        <div class="social-info"><span class="social-title">Instagram</span><span class="social-desc">Follow for the latest updates, announcements, and behind-the-scenes content</span></div>
+                        <div class="social-info"><span class="social-title">Instagram</span><span class="social-desc">Follow me on Insta for latest updates and BTS</span></div>
                         <span class="social-btn">Follow</span>
                     </a>
                     <a href="https://www.youtube.com/@CODEV2E" target="_blank" rel="noopener noreferrer" class="social-card">
                         <div class="social-icon-wrapper"><svg viewBox="0 0 24 24"><path d="M21.582 6.186c-.23-.86-.908-1.538-1.768-1.768C18.254 4 12 4 12 4s-6.254 0-7.814.418c-.86.23-1.538.908-1.768 1.768C2 7.746 2 12 2 12s0 4.254.418 5.814c.23.86.908 1.538 1.768 1.768C5.746 20 12 20 12 20s6.254 0 7.814-.418c.86-.23 1.538-.908 1.768-1.768C22 16.254 22 12 22 12s0-4.254-.418-5.814zM10 15.464V8.536L16 12l-6 3.464z"/></svg></div>
-                        <div class="social-info"><span class="social-title">YouTube</span><span class="social-desc">Subscribe for the latest videos, animations, and creative content</span></div>
+                        <div class="social-info"><span class="social-title">YouTube</span><span class="social-desc">Subscribe for latest video releases and tutorials</span></div>
                         <span class="social-btn">Subscribe</span>
                     </a>
                 </div>
@@ -560,6 +581,17 @@
         </section>
 
     </main>
+
+    <!-- TERMS & CONDITIONS FROSTED OVERLAY MODAL -->
+    <div id="terms-modal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); z-index: 5000; align-items: center; justify-content: center; padding: 20px;" onclick="if(event.target === this) closeTermsModal();">
+        <div class="glass-panel" style="width: 100%; max-width: 600px; max-height: 80vh; overflow-y: auto; margin-bottom: 0; background: rgba(255, 255, 255, 0.95); box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 15px; margin-bottom: 20px;">
+                <h3 style="font-size: 20px; font-weight: 800; color: var(--text-main); letter-spacing: -0.5px;">Studio Terms & Conditions</h3>
+                <button onclick="closeTermsModal()" class="social-btn-dark" style="width: auto; padding: 8px 16px; font-size: 11px; margin-top: 0;">Close Modal</button>
+            </div>
+            <div id="terms-text" style="font-size: 15px; line-height: 1.7; color: var(--text-main); white-space: pre-wrap; word-wrap: break-word; font-weight: 400;">Loading studio rules...</div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dflip/js/dflip.min.js"></script>
@@ -613,7 +645,7 @@
             }, 4000);
         }
 
-        /* Seamless AJAX Form Submissions */
+        /* Seamless AJAX Form Submissions with Native Fallback */
         function setupAjaxForms() {
             const forms = document.querySelectorAll('.ajax-form');
             forms.forEach(form => {
@@ -622,20 +654,31 @@
                     triggerSystemNotification('Sending...', 'Transmitting your message', 'info');
                     
                     try {
+                        const formData = new FormData(form);
+                        const object = {};
+                        formData.forEach((value, key) => {
+                            object[key] = value;
+                        });
+                        
                         const response = await fetch(form.action, {
                             method: form.method,
-                            body: new FormData(form),
-                            headers: { 'Accept': 'application/json' }
+                            body: JSON.stringify(object),
+                            headers: { 
+                                'Content-Type': 'application/json',
+                                'Accept': 'application/json' 
+                            }
                         });
                         
                         if (response.ok) {
                             form.reset();
                             triggerSystemNotification('Success', 'Message delivered to studio.', 'success');
                         } else {
-                            throw new Error('Network response was not ok');
+                            throw new Error('Network response status was ' + response.status);
                         }
                     } catch (error) {
-                        triggerSystemNotification('Error', 'Failed to send message. Try again later.', 'error');
+                        console.warn('AJAX submit failed, using standard form redirect: ', error);
+                        // Fallback: redirects natively to Formspree success page if browser block occurs
+                        form.submit();
                     }
                 });
             });
@@ -666,9 +709,31 @@
             }
         }
 
+        /* Dynamic rule.txt fetching and Modal display */
+        async function openTermsModal() {
+            const modal = document.getElementById('terms-modal');
+            const textContainer = document.getElementById('terms-text');
+            modal.style.display = 'flex';
+            
+            try {
+                const response = await fetch(`rule.txt?t=${sessionTime}`);
+                if (response.ok) {
+                    const text = await response.text();
+                    textContainer.innerHTML = text.replace(/\n/g, '<br>');
+                } else {
+                    textContainer.textContent = "Terms and conditions are currently unavailable. Please check back later.";
+                }
+            } catch (e) {
+                textContainer.textContent = "Terms and conditions are currently unavailable. Please check back later.";
+            }
+        }
+
+        function closeTermsModal() {
+            document.getElementById('terms-modal').style.display = 'none';
+        }
+
         async function fetchGitHubRepositoryPDFs() {
-            // Updated static fallback structure to show "Book" instead of "Book - Volume 1"
-            const staticFallbacks = [{ name: "Book.pdf", download_url: "book.pdf" }];
+            const staticFallbacks = [{ name: "Book - Volume 1.pdf", download_url: "book_vol1.pdf" }];
             try {
                 let user = "codev2e", repo = "codev2e.github.io";
                 if (window.location.hostname.endsWith("github.io")) {
@@ -750,4 +815,4 @@
         }
     </script>
 </body>
-</html>pp
+</html>
