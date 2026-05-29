@@ -589,7 +589,67 @@
                 <h3 style="font-size: 20px; font-weight: 800; color: var(--text-main); letter-spacing: -0.5px;">Studio Terms & Conditions</h3>
                 <button onclick="closeTermsModal()" class="social-btn-dark" style="width: auto; padding: 8px 16px; font-size: 11px; margin-top: 0;">Close Modal</button>
             </div>
-            <div id="terms-text" style="font-size: 15px; line-height: 1.7; color: var(--text-main); white-space: pre-wrap; word-wrap: break-word; font-weight: 400;">Loading studio rules...</div>
+            <div id="terms-text" style="font-size: 15px; line-height: 1.7; color: var(--text-main); white-space: pre-wrap; word-wrap: break-word; font-weight: 400;">CODEV2E Terms and Conditions
+
+1. All projects created under CODEV2E must prioritize storytelling quality over visual spectacle.
+
+2. Every team member is required to maintain production discipline and respect studio workflow.
+
+3. Scripts, storyboards, and visual concepts must receive approval before animation production begins.
+
+4. Unauthorized redesigns of characters, environments, or visual identity are prohibited.
+
+5. All assets created for studio projects remain studio property unless officially agreed otherwise.
+
+6. Plagiarism, tracing, or unauthorized copying of external work is strictly prohibited.
+
+7. Team members must maintain file organization and follow official naming systems.
+
+8. Missed deadlines without communication may result in removal from production responsibilities.
+
+9. Personal ego must never interfere with project quality or team collaboration.
+
+10. Harassment, disrespectful behavior, or public humiliation inside the team environment is prohibited.
+
+11. Story changes after production approval require director authorization.
+
+12. Animation shortcuts that reduce visual quality are not permitted.
+
+13. Artificial emotional manipulation without narrative purpose is discouraged.
+
+14. Dialogue must remain natural and character-consistent throughout production.
+
+15. Every project must maintain visual consistency from beginning to completion.
+
+16. Backgrounds, sound, and cinematography are considered essential storytelling elements.
+
+17. Audio quality standards must be maintained in every production stage.
+
+18. Team members are expected to continue improving artistic and technical skills.
+
+19. Leaking unreleased studio content without permission is prohibited.
+
+20. Use of AI-generated assets without official approval is prohibited.
+
+21. Projects must avoid unnecessary filler content that weakens pacing or storytelling.
+
+22. Character behavior and emotional progression must remain internally consistent.
+
+23. All action choreography must remain visually readable and understandable.
+
+24. Last-minute production changes that risk project stability should be avoided.
+
+25. All final exports must pass internal review before release.
+
+26. CODEV2E reserves the right to reject work that does not meet studio quality standards.
+
+27. Every contributor is responsible for protecting the creative identity of the studio.
+
+28. The studio prioritizes meaningful storytelling over trend chasing.
+
+29. Team collaboration is mandatory during production and revision stages.
+
+30. Failure to follow studio standards may result in removal from the project or production team.</div>
         </div>
     </div>
 
@@ -720,11 +780,9 @@
                 if (response.ok) {
                     const text = await response.text();
                     textContainer.innerHTML = text.replace(/\n/g, '<br>');
-                } else {
-                    textContainer.textContent = "Terms and conditions are currently unavailable. Please check back later.";
                 }
             } catch (e) {
-                textContainer.textContent = "Terms and conditions are currently unavailable. Please check back later.";
+                console.warn("Could not fetch rule.txt dynamically, using pre-baked fallback.", e);
             }
         }
 
